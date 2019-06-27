@@ -1,3 +1,5 @@
 SELECT count(*) FROM `transaksi` where kode_buku=7706 and tanggal_kembali is null
 
 SELECT *, date_add(tanggal_pinjam, interval 7 day) as tambah7, curdate(),DATEDIFF(curdate(),date_add(tanggal_pinjam, interval 7 day))*1000 as nominal_denda FROM `transaksi` where tanggal_kembali is null
+
+HAY HADJARRR
